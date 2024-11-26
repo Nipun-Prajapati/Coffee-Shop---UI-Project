@@ -1,0 +1,876 @@
+*
+{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border-style: hidden;
+    text-decoration: none;
+    /*transition: 1s linear;*/
+}
+
+/*Header Properties*/
+
+html
+{
+    font-size: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+html ::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb
+{
+    background-color: black;
+    border-radius: 2rem;
+}
+
+
+
+body
+{
+    background-color: black;
+}
+
+.header
+{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;  /*top left*/
+    top: 0;right: 0;left: 0;
+    z-index: 1000;
+    border-bottom-color:  white ;
+    height: 130px;
+    background-color: black;
+}
+
+.logo
+{
+    height: 130px;
+    width: 130px;
+    background-image: url("Logo.png");
+    background-size: cover;   
+}
+
+#Menu
+{
+    display: none;
+}
+
+.navbar a
+{
+    color: whitesmoke;
+    margin-left: 2rem;
+}
+
+.navbar a:hover
+{
+    text-decoration: blue 4px underline;
+}
+
+.icons div
+{
+    color : white;
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding: 5px;
+}
+
+.icons div:hover
+{
+    border: 2px solid red;
+    border-radius: 50%;
+    color : red;
+}
+
+.search-bar
+{
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    background-color: white;
+    height: 40px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.search-bar label
+{
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.search-bar label:hover
+{
+    color: darkred;
+}
+
+.search-bar input
+{
+   width: 380px;
+   height: 100%;
+   padding: 1rem;
+   font-size: 1rem;
+}
+
+.search-bar.active
+{
+    transform: scaleY(1);
+}
+
+.img1
+{
+    height: 100px;
+    width: 100px;
+    background-image: url("Choco.jpg");
+    background-size: cover;
+}
+
+.img2
+{
+    height: 100px;
+    width: 100px;
+    background-image: url("Latte.jpg");
+    background-size: cover;
+}
+
+.img3
+{
+    height: 100px;
+    width: 100px;
+    background-image: url("Turkishs-Coffee.jpg");
+    background-size: cover;
+}
+
+.img4
+{
+    height: 100px;
+    width: 100px;
+    background-image: url("Capertunio.jpg");
+    background-size: cover; 
+}
+
+.cart-container
+{
+    position: absolute;
+    background-color: white;
+    top : 70%;
+    right: -100%;
+    height: 520px;
+    width: 300px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.cart-container.active
+{
+    right: 0;
+}
+
+.cart-items
+{
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    gap: 10px;
+}
+ .btn
+{
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    width: 280px;
+    background-color: lightseagreen;
+    padding: 5px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.btn:hover
+{
+    border: 3px solid black;
+}
+
+.cart-items .fa-times
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: black;
+    font-size: 30px;
+}
+
+.cart-container .fa-times:hover
+{
+    color: crimson;
+}
+
+
+/*Home Section*/
+
+.Home
+{
+    background-image: url("Coffee.jpg");
+    background-size: cover;
+    height: 680px;
+    display: flex;
+    background-position:center ;
+}
+
+.Home h3
+{
+    margin-top: 9rem;
+    font-size: 2rem;
+    margin-left: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.Home p
+{
+    color: lightgray;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-top: 15rem;
+    font-weight: 400;
+}
+
+.Home a
+{
+    margin-left: 10px;
+    margin-left: 27rem;
+}
+
+/*About section*/
+
+.heading
+{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.heading span
+{
+    text-transform: uppercase;
+    color: lightslategray;
+}
+
+
+#img5
+{
+    background-image: url("Special_Coffee.jpg");
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+/*Menu Section*/
+
+.menu .heading h3
+{
+    color :aqua;
+    text-align: center;
+    margin: 5px;
+}
+
+.menu span
+{
+    color: white;
+}
+
+.row .content p 
+{
+    color: aliceblue;
+    width: 900px;
+    margin-top: 10px;
+}
+
+.row .content h3
+{
+    color: aliceblue;
+}
+
+.row
+{
+    display: flex;
+    align-items: center ;
+    justify-content: space-around;
+    background-color: rgb(46, 44, 44);
+    border-radius: 10px;
+}
+
+#img6
+{
+    background-image: url("coffee1.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-left: 20%;
+}
+
+#img7
+{
+    background-image: url("coffee2.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-left: 20%;
+}
+
+#img8
+{
+    background-image: url("coffee3.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-left: 20%;
+}
+
+#img9
+{
+    background-image: url("coffee4.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-left: 20%;
+}
+
+#img10
+{
+    background-image: url("Ristretto.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-left: 20%;
+}
+
+#img11
+{
+    background-image: url("cold-brew6.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-left: 20%;
+}
+
+.menu .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,300px));
+    margin-left: 100px;
+}
+.menu .box-container .box 
+{
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    justify-content: space-around;
+    margin: 10px;
+    border : 1px solid white;
+}
+
+.menu .box-container .box:hover
+{
+    background-color: white;
+}
+
+.menu .box-container .box:hover > *
+{
+    color : black ;
+}
+
+.box h3
+{
+    color: white;
+    
+}
+
+.box .prize
+{
+    color: antiquewhite;
+    padding: 10px;
+}
+
+.box .prize span
+{
+    text-decoration: line-through;
+    padding: 10px ;
+}
+
+.box .btn
+{
+    border-style: none;
+}
+
+.box-container .box .btn:hover
+{
+    color: crimson;
+}
+
+/*Products Section*/
+
+
+.products .heading h3
+{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px;
+}
+
+.products span
+{
+    color :lightcoral;
+}
+
+#img12
+{
+    background-image: url("Luxury-food.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#img13
+{
+    background-image: url("food.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#img14
+{
+    background-image: url("Toffy.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+.image
+{
+    padding-left: 50px;
+}
+
+.products .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,300px));
+    margin-left: 100px;
+    gap: 20px;
+}
+
+.products .box-container .box
+{
+    text-align: center ;
+    padding : 2rem;
+    border : 1px solid white;
+}
+
+.products .box-container .box .icons a
+{ 
+    font-size: 20px;
+    border : 1px solid white;
+    color : white;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightseagreen;
+}
+
+.products .box-container .icons a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+
+.products .box-container .box .stars
+{
+    color : lightslategrey;
+    margin: 10px;
+}
+
+/*Review Section*/
+
+.review .heading h3
+{
+    color: white;
+    text-align: center;
+    margin: 15px;
+}
+.review span
+{
+    color: lightgreen;
+    
+}
+
+#img15
+{
+    background-image: url("Mahesh-babu.jpg");
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    margin-left: 100px ;
+    border-radius: 50%;
+}
+
+#img16
+{
+    background-image: url("Pooja-Hegde.jpg");
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    margin-left: 100px ;
+    border-radius: 50%;
+}
+
+#img17
+{
+    background-image: url("Tom-cruise.jpg");
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    margin: 5px;
+    margin-left: 100px ;
+    border-radius: 50%;
+}
+
+.review .box-container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,200px));
+    margin-left: 100px;
+    gap: 20px;
+}
+
+.review .box-container .box
+{
+    border : 1px solid white;
+    text-align: center ;
+}
+
+.review .box-container .box p
+{
+    color: aliceblue;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.review .box-container .box .star
+{
+    color: white;
+    margin: 10px;
+}
+
+.review .box-container .box #mark
+{
+    color: gray;
+    font-size: 30px;
+    margin: 10px;
+}
+
+/*Contact Section */
+
+.contact
+{
+    margin: 20px;
+}
+
+
+.contact .heading h3
+{
+    color : white;
+}
+
+.contact .heading span
+{
+    color: lightslategrey;
+}
+
+.contact .row
+{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact .row .map 
+{
+    background-image: url("location.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 600px;
+}
+
+.contact .row form h2
+{
+    color: white;
+    text-transform: uppercase;
+}
+
+.contact .row  form .inputbox
+{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid white;
+    background-color: black;
+}
+
+.contact .row  form .inputbox span
+{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    color : white
+}
+
+.contact .row  form .inputbox input
+{
+    height: 40px;
+    width: 400px;
+    font-size: 1rem;
+    background: none ;
+    margin-left: 15px;
+}
+
+
+.contact .row  form .btn
+{
+    height: 40px;
+}
+
+
+/*Blogs Section*/
+
+#img18
+{
+    background-image: url("Capertunio.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+#img18:hover
+{
+    transform: scale(1.1);
+}
+
+#img19
+{
+    background-image: url("Latte.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+#img19:hover
+{
+    transform: scale(1.1);
+}
+
+#img20
+{
+    background-image: url("cold-brew6.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+#img20:hover
+{
+    transform: scale(1.1);
+}
+
+.blogs .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,200px));
+    margin-left: 100px;
+    gap: 20px;
+}
+
+.blogs .box-container .box
+{
+    border: 1px solid white;
+    overflow-x: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+.blogs .box-container .box .content .title
+{
+    color: white;
+    font-size: 30px;
+}
+
+.blogs .box-container .box .content .title:hover
+{
+    color: brown;
+}
+
+.blogs .box-container .box .content span
+{
+    color: burlywood;
+    display: block;
+    margin-top: 10px;
+}
+
+.blogs .box-container .box .content p
+{
+    color: #ccc;
+}
+
+.blogs .box-container .box .content .btn:hover
+{
+    transform: scale(1.1);
+}
+
+/*Footer Section*/
+
+.share a
+{
+    font-size: 30px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.share a:hover
+{
+    color: cornflowerblue;
+}
+
+.footer .share
+{
+    margin: 15px;
+    text-align: center;
+}
+
+.footer .links
+{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer .links a
+{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.footer .links a:hover
+{
+    color: cornflowerblue;
+}
+
+.footer .credit
+{
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 10px;
+}
+
+.footer .credit span
+{
+    color: cornflowerblue;
+}
+
+
+/*Media Queries*/
+
+@media (max-width:991px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+    .header
+    {
+        padding: 24px 32px ;
+    }
+    .logo
+    {
+        height: 100px;
+        width: 100px;
+    }
+    #Menu
+    {
+        display: inline-block;
+    }
+    .navbar
+    {
+        position: absolute;
+        background-color: white;
+        top: 70%;
+        right: -100%;
+    }
+
+    .navbar.active
+    {
+        right:0;
+    }
+    .navbar a 
+    {
+        display: block;
+        margin: 1.5rem;
+        padding: 1rem;
+        font-size: 2rem;
+        color: black;
+    }
+    .search-bar
+    {
+        width: 60%;
+        height: 4rem;
+        top : 100%;
+    }
+    .icons div
+    {
+        font-size: 3rem;
+    }
+    
+}
+
+
+
+@media(max-width:450px)
+{
+    html
+    {
+        font-size: 10px;
+    }
+}
